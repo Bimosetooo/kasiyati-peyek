@@ -30,14 +30,51 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search Form Start -->
+       <div class="search-form">
+        <input type="search" id="search-box" placeholder="cari disini...">
+        <label for="search-box"><i data-feather="search"></i></label>
+       </div>
+      <!-- Search Form End -->
+
+      <!-- Shopping Cart Start -->
+       <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/Products/1,1.jpg" alt="Produk 1">
+          <div class="item-detail">
+            <h3>Peyek Teri</h3>
+            <div class="item-price">IDR 20k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/Products/2,2.jpg" alt="Produk 2">
+          <div class="item-detail">
+            <h3>Keripik Kacang Tanah</h3>
+            <div class="item-price">IDR 19k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/Products/3,3.jpg" alt="Produk 3">
+          <div class="item-detail">
+            <h3>Keripik Kacang Hijau</h3>
+            <div class="item-price">IDR 19k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+       </div>
+      <!-- Shopping Cart End -->
     </nav>
     <!--Navbar End-->
 
@@ -49,7 +86,7 @@
           Menjual berbagai jenis keripik peyek dengan rasa autentik jaman dulu.
           Ga percaya? Cobain sendiri deh.
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
+        <a href="#products" class="cta">Beli Sekarang</a>
       </main>
     </section>
     <!-- Hero Section End -->
@@ -92,35 +129,165 @@
         <div class="menu-card">
             <img src="img/Menu/1.jpg" alt="Keripik Tempe" class="menu-card-img" />
             <h3 class="menu-card-title">- Keripik Tempe -</h3>
-            <p class="menu-card-price">IDR 19k-250g</p>
+            <p class="menu-card-price">IDR 19k</p>
       </div>
         <div class="menu-card">
             <img src="img/Menu/2.jpg" alt="Kacang Bulat" class="menu-card-img" />
             <h3 class="menu-card-title">- Kacang Bulat -</h3>
-            <p class="menu-card-price">IDR 19k-250g</p>
+            <p class="menu-card-price">IDR 19k</p>
       </div>
         <div class="menu-card">
             <img src="img/Menu/3.jpg" alt="Kacang Tanah" class="menu-card-img" />
             <h3 class="menu-card-title">- Kacang Tanah -</h3>
-            <p class="menu-card-price">IDR 19k-250g</p>
+            <p class="menu-card-price">IDR 19k</p>
       </div>
         <div class="menu-card">
             <img src="img/Menu/4.jpg" alt="Kacang Hijau" class="menu-card-img" />
             <h3 class="menu-card-title">- Kacang hijau -</h3>
-            <p class="menu-card-price">IDR 19k-250g</p>
+            <p class="menu-card-price">IDR 19k</p>
       </div>
         <div class="menu-card">
             <img src="img/Menu/5.jpg" alt="Kepirik Bayam" class="menu-card-img" />
             <h3 class="menu-card-title">- Keripik Bayam  -</h3>
-            <p class="menu-card-price">IDR 19k-250g</p>
+            <p class="menu-card-price">IDR 19k</p>
       </div>
         <div class="menu-card">
             <img src="img/Menu/6.jpg" alt="Peyek Teri" class="menu-card-img" />
             <h3 class="menu-card-title">- Peyek Teri -</h3>
-            <p class="menu-card-price">IDR 20k-250g</p>
+            <p class="menu-card-price">IDR 20k</p>
       </div>
     </section>
     <!-- Menu Section End -->
+
+    <!-- Products Section Start -->
+     <section class="products" id="products">
+      <h2><span>Produk Laris</span> Kami</h2>
+      <p>Aneka Keripik Peyek yang kami jual</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-1"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/1,1.jpg" alt="Produk 1">
+          </div>
+          <div class="product-content">
+            <h3>Peyek Teri</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 20k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-2"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/2,2.jpg" alt="Produk 2">
+          </div>
+          <div class="product-content">
+            <h3>Keripik Kacang Tanah</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 19k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-3"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/3,3.jpg" alt="Produk 3">
+          </div>
+          <div class="product-content">
+            <h3>Keripik Kacang Hijau</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 19k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-4"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/4,4.png" alt="Produk 4">
+          </div>
+          <div class="product-content">
+            <h3>Keripik Bayam</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 20k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-5"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/5,5.png" alt="Produk 5">
+          </div>
+          <div class="product-content">
+            <h3>Keripik Tempe</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 20k</div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="open-modal" data-target="modal-produk-6"><i data-feather="eye"></i></a>
+          </div>
+          <div class="products-image">
+            <img src="img/Products/6,6.png" alt="Produk 6">
+          </div>
+          <div class="product-content">
+            <h3>Keripik Kacang Bulat</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 20k</div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- Products Section End -->
 
     <!-- Contact Section Start -->
      <section id="contact" class="contact">
@@ -163,6 +330,7 @@
             <a href="#home">Home</a>
             <a href="#about">Tentang Kami</a>
             <a href="#menu">Menu</a>
+            <a href="#products">Produk</a>
             <a href="#contact">Kontak</a>
         </div>
 
@@ -172,6 +340,144 @@
 
      </footer>
     <!-- Footer End -->
+
+    <!-- Modal Produk 1 -->
+<div class="modal" id="modal-produk-1">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/1,1.jpg" alt="Produk 1">
+      <div class="product-content">
+        <h3>Peyek Teri - 250g</h3>
+        <p>Peyek Teri gurih dan renyah pakai ikan teri asli.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+        </div>
+        <div class="product-price">IDR 20k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produk 2 -->
+<div class="modal" id="modal-produk-2">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/2,2.jpg" alt="Produk 2">
+      <div class="product-content">
+        <h3>Keripik Kacang Tanah - 250g</h3>
+        <p>Keripik kacang gurih dan renyah asli buatan rumahan.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 19k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produk 3 -->
+<div class="modal" id="modal-produk-3">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/3,3.jpg" alt="Produk 3">
+      <div class="product-content">
+        <h3>Keripik Kacang Hijau - 250g</h3>
+        <p>Kacang hijau diolah renyah dan sehat buat cemilan sore.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 19k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produk 4 -->
+<div class="modal" id="modal-produk-4">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/4,4.png" alt="Produk 4">
+      <div class="product-content">
+        <h3>Keripik Bayam - 250g</h3>
+        <p>Dengan menggunakan daun bayam asli namun memiliki rasa gurih tetapi tidak menghilangkan rasa bayam yang khas dengan tekstur renyah.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 20k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produk 5 -->
+<div class="modal" id="modal-produk-5">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/5,5.png" alt="Produk 5">
+      <div class="product-content">
+        <h3>Keripik Tempe - 250g</h3>
+        <p>Keripik tempe yang memiliki tekstur tipis dan renyah dengan rasa gurih dan asin yang bikin nagih.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+        </div>
+        <div class="product-price">IDR 20k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Produk 6 -->
+<div class="modal" id="modal-produk-6">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/Products/6,6.png" alt="Produk 6">
+      <div class="product-content">
+        <h3>Keripik Kacang Bulat - 250g</h3>
+        <p>Kacang bulat dengan taburan kacang tanah utuh yang melimpah memberikan sensasi yang wah tiap gigitannya.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+          <i data-feather="star" class="star"></i>
+        </div>
+        <div class="product-price">IDR 20k</div>
+        <a href="#"><i data-feather="shopping-cart"></i> <span>tambah belanja</span></a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!--Feather Icons-->
     <script>
